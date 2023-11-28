@@ -1,0 +1,193 @@
+Criando a tabela
+Tamanho da tabela: 8
+[['L', 'L', 'L', 'L', 'L', 'L', 'L', 'L'], ['', '', '', '', '', '', '', '']]
+
+--------------------------------------------------------------------------------------------------------
+Inserindo vários nomes de uma vez
+
+Nome: Pedro
+Lugar = 2
+Lugar vazio
+[['L', 'L', 'O', 'L', 'L', 'L', 'L', 'L'], ['', '', 'Pedro', '', '', '', '', '']]
+
+Nome: Anderson
+Lugar = 2
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 3
+Lugar vazio
+[['L', 'L', 'O', 'O', 'L', 'L', 'L', 'L'], ['', '', 'Pedro', 'Anderson', '', '', '', '']]
+
+Nome: Saulo
+Lugar = 4
+Lugar vazio
+[['L', 'L', 'O', 'O', 'O', 'L', 'L', 'L'], ['', '', 'Pedro', 'Anderson', 'Saulo', '', '', '']]
+
+Nome: Cainan
+Lugar = 2
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 3
+Lugar ocupado
+
+Tentativa = 2
+Novo lugar = 7
+Lugar vazio
+[['L', 'L', 'O', 'O', 'O', 'L', 'L', 'O'], ['', '', 'Pedro', 'Anderson', 'Saulo', '', '', 'Cainan']]
+
+Nome: Joao
+Lugar = 1
+Lugar vazio
+[['L', 'O', 'O', 'O', 'O', 'L', 'L', 'O'], ['', 'Joao', 'Pedro', 'Anderson', 'Saulo', '', '', 'Cainan']]
+
+Nome: Heraclito
+Lugar = 3
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 4
+Lugar ocupado
+
+Tentativa = 2
+Novo lugar = 0
+Lugar vazio
+[['O', 'O', 'O', 'O', 'O', 'L', 'L', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', '', '', 'Cainan']]
+
+Nome: Otavio
+Lugar = 2
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 3
+Lugar ocupado
+
+Tentativa = 2
+Novo lugar = 7
+Lugar ocupado
+
+Tentativa = 3
+Novo lugar = 0
+Lugar ocupado
+
+Tentativa = 4
+Novo lugar = 0
+Lugar ocupado
+
+Tentativa = 5
+Novo lugar = 1
+Lugar ocupado
+
+Tentativa = 6
+Novo lugar = 5
+Lugar vazio
+[['O', 'O', 'O', 'O', 'O', 'O', 'L', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', 'Otavio', '', 'Cainan']]
+
+Nome: Edu
+Lugar = 6
+Lugar vazio
+[['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', 'Otavio', 'Edu', 'Cainan']]
+
+Nome: Diego
+Lugar = 0
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 1
+Lugar ocupado
+
+Tentativa = 2
+Novo lugar = 5
+Lugar ocupado
+
+Tentativa = 3
+Novo lugar = 6
+Lugar ocupado
+
+Tentativa = 4
+Novo lugar = 6
+Lugar ocupado
+
+Tentativa = 5
+Novo lugar = 7
+Lugar ocupado
+
+Tentativa = 6
+Novo lugar = 3
+Lugar ocupado
+
+Tentativa = 7
+Novo lugar = 4
+Lugar ocupado
+
+
+Tabela cheia
+
+
+Nome: Brayan
+Lugar = 5
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 6
+Lugar ocupado
+
+Tentativa = 2
+Novo lugar = 2
+Lugar ocupado
+
+Tentativa = 3
+Novo lugar = 3
+Lugar ocupado
+
+Tentativa = 4
+Novo lugar = 3
+Lugar ocupado
+
+Tentativa = 5
+Novo lugar = 4
+Lugar ocupado
+
+Tentativa = 6
+Novo lugar = 0
+Lugar ocupado
+
+Tentativa = 7
+Novo lugar = 1
+Lugar ocupado
+
+
+Tabela cheia
+
+
+--------------------------------------------------------------------------------------------------------
+Buscar na tabela
+
+Cainan:
+Nome encontrado na posição [1][7]
+
+Diego:
+Nome não encontrado na tabela
+
+--------------------------------------------------------------------------------------------------------
+Deletar na tabela
+
+[['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', 'Otavio', 'Edu', 'Cainan']]
+
+Nome encontrado na posição [1][6]
+[['O', 'O', 'O', 'O', 'O', 'O', 'R', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', 'Otavio', '', 'Cainan']]
+
+--------------------------------------------------------------------------------------------------------
+Inserir na tabela
+
+Brayan
+
+Nome: Brayan
+Lugar = 5
+Lugar ocupado
+
+Tentativa = 1
+Novo lugar = 6
+Lugar vazio
+[['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'], ['Heraclito', 'Joao', 'Pedro', 'Anderson', 'Saulo', 'Otavio', 'Brayan', 'Cainan']]
