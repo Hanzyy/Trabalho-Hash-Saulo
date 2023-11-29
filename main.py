@@ -53,11 +53,16 @@ def inserir(tabela, nome):
 
 
 def buscar(tabela, nome):
-    tamanho = len(tabela[1])        #Verifica o tamanho da tabela, mas como é um valor padrão, será 8
-    a = 0                           #Inicia uma variável para a verificação de cada posição
-    while a < tamanho:              #Enquanto a variável for menor que o tamanho da matriz
+    tamanho = len(tabela[1])                #Verifica o tamanho da tabela, mas como é um valor padrão, será 8
+    a = 0                                   #Inicia uma variável para a verificação de cada posição
+    lugar = funcao_hash(nome, tamanho)      #Inicia a variável para a tentativa quadrática
+    while a < tamanho:                      #Enquanto a variável for menor que o tamanho da matriz
+        lugar = (lugar + a * a) % tamanho   #Tentativa quadrática
+        print(f"Lugar = {lugar}")
+        print(f"Tentativa = {a+1}\n")
         if tabela[1][a] == nome:                                #Se o nome estiver naquela posição
             print(f"Nome encontrado na posição [1][{a}]")       #Mostra em qual posição da matriz o nome está
+            print(tabela)
             return a                                            #Retorna a posição da matriz
         a+=1                        #Passa para próxima tentativa
     print("Nome não encontrado na tabela")          #Se passar por todas as posições e não achar o nome
@@ -111,7 +116,7 @@ if __name__ == "__main__":
     print("Deletar na tabela\n")
 
     print(f"{tabela}\n")
-    deletar(tabela, "Edu")
+    deletar(tabela, "Pedro")
     print(tabela)
 
     print("\n--------------------------------------------------------------------------------------------------------")
